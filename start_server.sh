@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Create index.html 
 cat << EOF > index.html
@@ -16,4 +16,4 @@ cat << EOF > index.html
 EOF
 
 # start server
-python3 -m http.server
+exec python3 -m http.server 8000
